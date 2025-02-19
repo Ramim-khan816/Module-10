@@ -30,12 +30,13 @@
     
   }
   .navbar{
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
      
   }
   .bg-light{
     background-color: rgba(249, 234, 176, 1);
+     
     
   }
   .navbar {
@@ -70,7 +71,92 @@
      
   }
   .bg-image{
-    width: 80%;
-    margin: 0 auto 0;
+     
+    
+     
   } 
-  
+   div img{
+    max-width: 80%;
+    height: auto;
+     
+    margin-left: 100px; 
+     
+     
+   }
+   main{
+    min-width: 1000px;
+    margin: 0 auto;
+   }
+   .img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+     
+     
+   }
+   main > section{
+    margin-top: 110px;
+   }
+   .teams{
+    align-items: center;
+    gap: 100px;
+   }
+    .features{
+      max-width: 500px;
+
+    }
+    .features-tittle{
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+    #quick-list{
+      font-weight: 500;
+    }
+    #feature-color{
+      color: rgba(255, 144, 14, 1);
+    }
+    .facts-container{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .fact{
+      color: rgba(114, 114, 114, 1);
+      border: 2px solid rgba(255, 144, 14, 1);
+      width: 120px;
+      height: 120px;
+      border-radius: 5px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .fact-icon{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+    }
+   @media screen and (max-width: 576px) {
+      .navbar, .display{
+        flex-direction: column;
+      }
+      div img{
+         max-width: 100%;
+         height: auto;
+         margin: 0 auto;
+      }
+      .features .teams{
+        flex-direction: column;
+      }
+      .img-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 20px;
+      }
+      .teams{
+        margin-left: 0 auto;
+      }
+       
+      }
+   
